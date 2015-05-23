@@ -1,0 +1,30 @@
+/*
+ * ElementoListaInt.cpp
+ *
+ *  Created on: 20/5/2015
+ *      Author: Diego
+ */
+#include "stdafx.h"
+#include "ElementoListaInt.h"
+
+ElementoListaInt::ElementoListaInt(int i) :
+		i(i) {
+}
+
+ElementoListaInt::~ElementoListaInt() {
+}
+
+int ElementoListaInt::compareTo(ElementoLista * otro) {
+	int cmp = 0;
+	ElementoListaInt * eInt = static_cast<ElementoListaInt *>(otro);
+	if (eInt != 0) {
+		cmp = this->i < eInt->i ? -1 : this->i == eInt->i ? 0 : 1;
+	}
+	return cmp;
+}
+
+void ElementoListaInt::imprimir(ostream& out) const {
+	out << i;
+}
+
+
