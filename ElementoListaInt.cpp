@@ -6,6 +6,7 @@
  */
 #include "stdafx.h"
 #include "ElementoListaInt.h"
+#include "ElementoInt.h"
 
 ElementoListaInt::ElementoListaInt(int i) :
 		i(i) {

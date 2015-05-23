@@ -8,7 +8,7 @@
 #include "Lista.h"
 
 Lista::Lista() {
-
+	cantidadElementos = 0;
 	primero = NULL;
 	ultimo = NULL;
 
@@ -19,13 +19,18 @@ Lista::~Lista() {
 }
 
 void Lista::insertarElemento(ElementoLista* actual) {
-
+	int p = 0;
 	if (primero == NULL) {
 		primero = actual;
+		ultimo = actual;
+		actual->posicion = p;
+		cantidadElementos++;
 	} else {
 		insertarElementoRec(primero, actual);
 	}
 }
+
+
 
 void Lista::insertarElementoRec(ElementoLista* actual,
 		ElementoLista* insertar) {
@@ -35,6 +40,35 @@ void Lista::insertarElementoRec(ElementoLista* actual,
 	} else {
 		actual->siguiente = insertar;
 		insertar->anterior = actual;
+		ultimo = insertar;
+		cantidadElementos++;
+	}
+
+}
+
+void Lista::insertarInicio(ElementoLista* actual) {
+
+	if (primero == NULL) {
+		primero = actual;
+		ultimo = actual;
+		cantidadElementos++;
+	}
+	else {
+		insertarInicioRec(primero, actual);
+	}
+}
+
+void Lista::insertarInicioRec(ElementoLista* actual,
+	ElementoLista* insertar) {
+
+	if (actual->anterior != NULL) {
+		insertarInicioRec(actual->anterior, insertar);
+	}
+	else {
+		actual->anterior = insertar;
+		insertar->siguiente = actual;
+		primero = insertar;
+		cantidadElementos++;
 	}
 
 }

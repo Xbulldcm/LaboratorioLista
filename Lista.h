@@ -21,13 +21,17 @@ class Lista {
 		ElementoLista * ultimo;
 
 	public:
+		int cantidadElementos;
+
 		Lista();
 		virtual ~Lista();
 
+		void insertarInicio(ElementoLista*);
 		void insertarElemento(ElementoLista *);
 		void ordenar(ElementoLista*);
 
 	private:
+		void insertarInicioRec(ElementoLista*,ElementoLista*);
 		void insertarElementoRec(ElementoLista *, ElementoLista *);
 		void imprimir(ElementoLista *, ostream &);
 

@@ -8,18 +8,18 @@
 #ifndef ELEMENTOPERSONA_H_
 #define ELEMENTOPERSONA_H_
 
-#include "Elemento.h"
+#include "ElementoLista.h"
 #include "Persona.h"
 
 
 using namespace std;
 
-class ElementoPersona : public Elemento{
+class ElementoPersona : public ElementoLista{
 
 public:
 	Persona * p;
 
-	int compareTo(Elemento *);
+	int compareTo(ElementoLista *);
 	void imprimir(ostream &) const;
 	ElementoPersona(Persona*);
 	virtual ~ElementoPersona();

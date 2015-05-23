@@ -8,6 +8,7 @@
 #include "ElementoLista.h"
 
 ElementoLista::ElementoLista() {
+	posicion = 0;
 	anterior = NULL;
 	siguiente = NULL;
 }

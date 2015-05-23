@@ -5,16 +5,17 @@
  *      Author: ruben.jimenez
  */
 #include "stdafx.h"
+#include "ElementoListaInt.h"
 #include "ElementoInt.h"
 
 ElementoInt::ElementoInt(int i) :
-		i(i) {
+i(i) {
 }
 
 ElementoInt::~ElementoInt() {
 }
 
-int ElementoInt::compareTo(Elemento * otro) {
+int ElementoInt::compareTo(ElementoLista * otro) {
 	int cmp = 0;
 	ElementoInt * eInt = static_cast<ElementoInt *>(otro);
 	if (eInt != 0) {
@@ -22,7 +23,6 @@ int ElementoInt::compareTo(Elemento * otro) {
 	}
 	return cmp;
 }
-
 
 void ElementoInt::imprimir(ostream& out) const {
 	out << i;

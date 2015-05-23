@@ -16,7 +16,7 @@ ElementoPersona::~ElementoPersona() {
 
 }
 
-int ElementoPersona::compareTo(Elemento * otro) {
+int ElementoPersona::compareTo(ElementoLista * otro) {
 	int cmp = 0;
 	ElementoPersona * e = static_cast<ElementoPersona *>(otro);
 	if (e != 0) {

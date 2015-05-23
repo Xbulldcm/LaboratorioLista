@@ -8,24 +8,21 @@
 #ifndef ELEMENTOINT_H_
 #define ELEMENTOINT_H_
 
-#include "Elemento.h"
 #include "ElementoLista.h"
-
 
 
 using namespace std;
 
-class ElementoInt : public Elemento {
-
+class ElementoInt : public ElementoLista {
 private:
 	int i;
 
 public:
-	ElementoInt(int i);
-	~ElementoInt();
-	int compareTo(Elemento *);
-	void imprimir(ostream &) const;
 
+	int compareTo(ElementoLista *);
+	void imprimir(ostream &) const;
+	ElementoInt(int);
+	virtual ~ElementoInt();
 };
 
 #endif /* ELEMENTOINT_H_ */

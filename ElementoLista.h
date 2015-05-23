@@ -22,6 +22,9 @@ protected:
 	ElementoLista * anterior, * siguiente;
 
 public:
+
+	int posicion;
+
 	virtual ~ElementoLista();
 	virtual int compareTo(ElementoLista *) = 0;
 	virtual void imprimir(ostream &) const = 0;

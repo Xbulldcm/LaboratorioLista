@@ -8,18 +8,18 @@
 #ifndef ELEMENTODOUBLE_H_
 #define ELEMENTODOUBLE_H_
 
-#include "Elemento.h"
+#include "ElementoLista.h"
 
 using namespace std;
 
-class ElementoDouble : public Elemento {
+class ElementoDouble : public ElementoLista {
 
 private:
 	double d;
 public:
 	ElementoDouble(double d);
 	~ElementoDouble();
-	int compareTo(Elemento *);
+	int compareTo(ElementoLista *);
 	void imprimir(ostream &) const;
 };
 

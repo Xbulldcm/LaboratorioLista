@@ -15,7 +15,7 @@ ElementoDouble::ElementoDouble(double d) :
 ElementoDouble::~ElementoDouble() {
 }
 
-int ElementoDouble::compareTo(Elemento * otro) {
+int ElementoDouble::compareTo(ElementoLista * otro) {
 	int cmp = 0;
 	ElementoDouble * eDouble = static_cast<ElementoDouble *>(otro);
 	if (eDouble != 0) {
