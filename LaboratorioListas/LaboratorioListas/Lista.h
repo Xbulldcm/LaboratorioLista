@@ -16,7 +16,7 @@ using namespace std;
 class Lista {
 	friend ostream & operator<<(ostream &, Lista &);
 
-	private:
+	public:
 		ElementoLista * primero;
 		ElementoLista * ultimo;
 
@@ -29,11 +29,14 @@ class Lista {
 		void insertarInicio(ElementoLista*);
 		void insertarElemento(ElementoLista *);
 		void ordenar(ElementoLista*);
+		void ordenarPosiciones(ElementoLista*, int);
+
 
 	private:
 		void insertarInicioRec(ElementoLista*,ElementoLista*);
 		void insertarElementoRec(ElementoLista *, ElementoLista *);
 		void imprimir(ElementoLista *, ostream &);
+		
 
 };
 

@@ -34,11 +34,16 @@ int main(int argc, char **argv) {
 	
 	for (int w = 0; w < 10; ++w) {
 		Persona* p1 = new Persona(rand() % 1000, s[rand() % 30], rand() % 100);
-		l.insertarElemento(new ElementoPersona(p1));
+		ElementoPersona *p11 = new ElementoPersona(p1);
+		p11->posicion = w;
+		l.insertarElemento(p11);
 	}
 
 	Persona* p2 = new Persona(rand() % 1000, "Pepito", rand() % 100);
 	l.insertarInicio(new ElementoPersona(p2));
+
+	l.ordenarPosiciones(l.primero, 0);
+
 	cout << "Lista Enteros" << endl;
 	cout << endl;
 	cout << l << endl;

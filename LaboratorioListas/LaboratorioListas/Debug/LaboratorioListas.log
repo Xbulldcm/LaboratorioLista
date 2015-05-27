@@ -1,23 +1,10 @@
-﻿Compilación iniciada a las 5/22/2015 6:57:43 PM.
-     1>Proyecto "c:\Users\b11555\documents\visual studio 2013\Projects\LaboratorioListas\LaboratorioListas\LaboratorioListas.vcxproj" en el nodo 2 (Build destinos).
+﻿Build started 27/05/2015 02:53:29 a.m..
+     1>Project "C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\LaboratorioListas\LaboratorioListas.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\LaboratorioListas.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\LaboratorioListas.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Elemento.cpp ElementoDouble.cpp ElementoInt.cpp ElementoLista.cpp ElementoListaInt.cpp ElementoPersona.cpp ElementoPersonaEdad.cpp LaboratorioListas.cpp Lista.cpp Main.cpp Persona.cpp
-         Omitiendo... (no se detectaron cambios relevantes)
-         Persona.cpp
-         Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\LaboratorioListas.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Lista.cpp
          Lista.cpp
-         LaboratorioListas.cpp
-         ElementoPersonaEdad.cpp
-         ElementoPersona.cpp
-         ElementoListaInt.cpp
-         ElementoLista.cpp
-         ElementoInt.cpp
-         ElementoDouble.cpp
-         Elemento.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\b11555\documents\visual studio 2013\Projects\LaboratorioListas\Debug\LaboratorioListas.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\b11555\documents\visual studio 2013\Projects\LaboratorioListas\Debug\LaboratorioListas.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\b11555\documents\visual studio 2013\Projects\LaboratorioListas\Debug\LaboratorioListas.lib" /MACHINE:X86 Debug\Elemento.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\Debug\LaboratorioListas.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\Debug\LaboratorioListas.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\Debug\LaboratorioListas.lib" /MACHINE:X86 Debug\Elemento.obj
          Debug\ElementoDouble.obj
          Debug\ElementoInt.obj
          Debug\ElementoLista.obj
@@ -29,9 +16,9 @@
          Debug\Main.obj
          Debug\Persona.obj
          Debug\stdafx.obj
-         LaboratorioListas.vcxproj -> c:\users\b11555\documents\visual studio 2013\Projects\LaboratorioListas\Debug\LaboratorioListas.exe
-     1>Compilación del proyecto terminada "c:\Users\b11555\documents\visual studio 2013\Projects\LaboratorioListas\LaboratorioListas\LaboratorioListas.vcxproj" (Build destinos).
+         LaboratorioListas.vcxproj -> C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\Debug\LaboratorioListas.exe
+     1>Done Building Project "C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\LaboratorioListas\LaboratorioListas.vcxproj" (Build target(s)).
 
-Compilación correcta.
+Build succeeded.
 
-Tiempo transcurrido 00:00:00.86
+Time Elapsed 00:00:00.45
