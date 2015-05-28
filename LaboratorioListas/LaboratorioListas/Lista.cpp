@@ -57,6 +57,8 @@ void Lista::insertarInicio(ElementoLista* actual) {
 	else {
 		insertarInicioRec(primero, actual);
 	}
+
+	ordenarPosiciones(primero, 0);
 }
 
 void Lista::insertarInicioRec(ElementoLista* actual,
@@ -80,8 +82,6 @@ ostream & operator<<(ostream & out, Lista & l) {
 	return out;
 }
 
-void Lista::ordenar(ElementoLista*) {
-}
 
 void Lista::imprimir(ElementoLista* nodo, ostream& out) {
 	if (nodo != NULL) {
@@ -101,6 +101,33 @@ void Lista::ordenarPosiciones(ElementoLista* nodo, int p){
 
 	}
 	
+}
+
+void  Lista::eliminar(int posicion){
+	if (primero != NULL){
+
+		eliminarRec(primero,posicion);
+	
+	}
+
+	ordenarPosiciones(primero, 0);
+}
+
+void Lista::eliminarRec(ElementoLista* actual, int p){
+	if (actual->posicion != p){
+
+		if (actual->siguiente != NULL){ 
+			eliminarRec(actual->siguiente, p);
+		}
+
+	}
+	else {
+
+		actual->anterior->siguiente = actual->siguiente;
+		actual->siguiente->anterior = actual->anterior;
+		cantidadElementos--;
+
+	}
 }
 
 

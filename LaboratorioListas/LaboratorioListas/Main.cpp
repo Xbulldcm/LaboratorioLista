@@ -39,12 +39,26 @@ int main(int argc, char **argv) {
 		l.insertarElemento(p11);
 	}
 
+	cout << "Lista Enteros" << endl;
+	cout << endl;
+	cout << l << endl;
+	cout << endl;
+	cout << "Cantidad de Elementos: " << l.cantidadElementos << endl;
+
 	Persona* p2 = new Persona(rand() % 1000, "Pepito", rand() % 100);
 	l.insertarInicio(new ElementoPersona(p2));
 
-	l.ordenarPosiciones(l.primero, 0);
+	cout << endl;
+	cout << "Lista Enteros Insertando al Inicio" << endl;
+	cout << endl;
+	cout << l << endl;
+	cout << endl;
+	cout << "Cantidad de Elementos: " << l.cantidadElementos << endl;
 
-	cout << "Lista Enteros" << endl;
+	l.eliminar(3);
+
+	cout << endl;
+	cout << "Lista Enteros Eliminando la Posicion 3" << endl;
 	cout << endl;
 	cout << l << endl;
 	cout << endl;

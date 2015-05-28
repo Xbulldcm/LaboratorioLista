@@ -1,8 +1,9 @@
-﻿Build started 27/05/2015 02:53:29 a.m..
+﻿Build started 28/05/2015 01:17:04 p.m..
      1>Project "C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\LaboratorioListas\LaboratorioListas.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\LaboratorioListas.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Lista.cpp
-         Lista.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\LaboratorioListas.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\diego\documents\github\laboratoriolista\laboratoriolistas\laboratoriolistas\main.cpp(26): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\Debug\LaboratorioListas.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\Debug\LaboratorioListas.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Diego\Documents\GitHub\LaboratorioLista\LaboratorioListas\Debug\LaboratorioListas.lib" /MACHINE:X86 Debug\Elemento.obj
          Debug\ElementoDouble.obj
@@ -21,4 +22,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.45
+Time Elapsed 00:00:00.34
