@@ -55,10 +55,11 @@ int main(int argc, char **argv) {
 	cout << endl;
 	cout << "Cantidad de Elementos: " << l.cantidadElementos << endl;
 
-	l.eliminar(3);
+	int poc = 4;
+	l.eliminar(poc);
 
 	cout << endl;
-	cout << "Lista Enteros Eliminando la Posicion 3" << endl;
+	cout << "Lista Enteros Eliminando la Posicion " << poc << endl;
 	cout << endl;
 	cout << l << endl;
 	cout << endl;

@@ -123,10 +123,16 @@ void Lista::eliminarRec(ElementoLista* actual, int p){
 	}
 	else {
 
-		actual->anterior->siguiente = actual->siguiente;
-		actual->siguiente->anterior = actual->anterior;
-		cantidadElementos--;
+		if (p == 0){
+			primero = actual->siguiente;
+			actual->siguiente->anterior = NULL;
 
+		}
+		else {
+			actual->anterior->siguiente = actual->siguiente;
+			actual->siguiente->anterior = actual->anterior;
+			cantidadElementos--;
+		}
 	}
 }
 
