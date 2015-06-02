@@ -55,7 +55,7 @@ int main(int argc, char **argv) {
 	cout << endl;
 	cout << "Cantidad de Elementos: " << l.cantidadElementos << endl;
 
-	int poc = 4;
+	int poc = 5;
 	l.eliminar(poc);
 
 	cout << endl;
